@@ -1,0 +1,7 @@
+{
+  "name": "pdf-editor",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
