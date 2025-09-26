@@ -1,0 +1,17 @@
+<div class="upload-container">
+  <ngx-file-drop
+    [directory]="false"
+    (onFileDrop)="dropped($event)"
+    [accept]="acceptedTypes.join(',')"
+    >
+    <ng-template ngx-file-drop-content-tmp let-openFileSelector="openFileSelector">
+      <div class="upload-area" (click)="openFileSelector()">
+        <ion-icon name="cloud-upload-outline"></ion-icon>
+        <p>Drag and drop files here or click to browse</p>
+        <ion-button fill="outline" size="small">
+          Browse Files
+        </ion-button>
+      </div>
+    </ng-template>
+  </ngx-file-drop>
+</div>
