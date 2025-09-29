@@ -1,3 +1,9 @@
-<p>
-  image-editor works!
-</p>
+<div class="image-editor">
+  <h2>Image Editor</h2>
+  <input type="file" (change)="onFileSelected($event)" accept="image/*" />
+  <br />
+  <canvas id="canvas" width="500" height="400" style="border:1px solid #ccc"></canvas>
+  <br />
+  <button (click)="addText()">Add Text</button>
+  <button (click)="downloadImage()" [disabled]="!imageLoaded">Download Edited Image</button>
+</div>

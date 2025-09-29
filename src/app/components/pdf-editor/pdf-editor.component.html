@@ -1,3 +1,5 @@
-<p>
-  pdf-editor works!
-</p>
+<div class="pdf-editor">
+  <h2>PDF Editor</h2>
+  <input type="file" (change)="onFileSelected($event)" accept="application/pdf" />
+  <button (click)="downloadPdf()" [disabled]="!pdfBytes">Download Edited PDF</button>
+</div>

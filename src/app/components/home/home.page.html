@@ -1,37 +1,7 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      PDF & Image Editor
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="home-container">
+  <h1>Welcome to Document Editor</h1>
+  <p>Select an option to start editing:</p>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">PDF & Image Editor</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div class="editor-options">
-    <ion-card routerLink="/pdf-editor">
-      <ion-card-header>
-        <ion-card-title>PDF Editor</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Edit PDFs, add text, images, and annotations</p>
-        <ion-button expand="block">Open PDF Editor</ion-button>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card routerLink="/image-editor">
-      <ion-card-header>
-        <ion-card-title>Image Editor</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Edit images, extract text using OCR, add annotations</p>
-        <ion-button expand="block">Open Image Editor</ion-button>
-      </ion-card-content>
-    </ion-card>
-  </div>
-</ion-content>
+  <ion-button routerLink="/pdf-editor">Edit PDF</ion-button>
+  <ion-button routerLink="/image-editor">Edit Image</ion-button>
+</div>
